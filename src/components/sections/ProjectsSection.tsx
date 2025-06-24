@@ -22,13 +22,13 @@ interface Project {
 interface ProjectsSectionProps {
   title?: string;
   subtitle?: string;
-  projects?: Project[];
 }
 
 const ProjectsSection = ({
   title = "My Projects",
   subtitle = "A showcase of my recent work and personal projects",
-  projects = [
+}: ProjectsSectionProps) => {
+  const projects = [
     {
       id: "1",
       title: "atelonabierto.com",
@@ -44,8 +44,7 @@ const ProjectsSection = ({
       githubUrl: "https://github.com/AbrahamThomasJ/ataWeb1.3",
       category: "web",
     },
-  ],
-}: ProjectsSectionProps) => {
+  ];
   const [searchTerm, setSearchTerm] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
 

@@ -32,26 +32,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       githubLink: "https://github.com/AbrahamThomasJ/ataWeb1.3",
       liveLink: "https://atelonabierto.com",
     },
-    {
-      title: "Task Management App",
-      description:
-        "A productivity tool for organizing tasks with drag-and-drop functionality.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=600&q=80",
-      technologies: ["TypeScript", "Redux", "Firebase"],
-      githubLink: "#",
-      liveLink: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "Real-time weather information with interactive maps and forecasts.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&q=80",
-      technologies: ["React", "OpenWeather API", "Chart.js"],
-      githubLink: "#",
-      liveLink: "#",
-    },
   ],
 }) => {
   return (
