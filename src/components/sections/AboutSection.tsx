@@ -17,7 +17,7 @@ interface AboutSectionProps {
 
 const AboutSection = ({
   title = "About Me",
-  description = "I'm a passionate full-stack developer with a focus on creating beautiful, responsive, and user-friendly web applications. With several years of experience in web development, I specialize in React, TypeScript, and modern frontend frameworks while also having strong backend skills.",
+  description = "I'm a passionate full-stack developer with a focus on creating beautiful, responsive, and user-friendly web applications. With experience in web development, I specialize in React, TypeScript, and modern frontend frameworks while also having strong backend skills.",
   skills = [
     { name: "React", category: "frontend" },
     { name: "TypeScript", category: "frontend" },
@@ -26,9 +26,9 @@ const AboutSection = ({
     { name: "Node.js", category: "backend" },
     { name: "Express", category: "backend" },
     { name: "PostgreSQL", category: "backend" },
-    { name: "MongoDB", category: "backend" },
+
     { name: "UI/UX Design", category: "design" },
-    { name: "Figma", category: "design" },
+
     { name: "Git", category: "tools" },
     { name: "Docker", category: "tools" },
   ],
@@ -102,7 +102,7 @@ const AboutSection = ({
             className="space-y-8"
           >
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
-              Skills & Expertise
+              Skills
             </h3>
 
             {Object.entries(skillsByCategory).map(

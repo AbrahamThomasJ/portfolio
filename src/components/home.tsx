@@ -144,32 +144,12 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://linkedin.com/in/yourprofile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://github.com/yourusername"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
                 >
                   GitHub
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.upwork.com/freelancers/yourprofile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
-                >
-                  Upwork
                 </a>
               </li>
             </ul>
@@ -183,10 +163,10 @@ const Footer = () => {
               Feel free to reach out for collaborations or inquiries.
             </p>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:abrahamjesusmt@gmail.com"
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
-              your.email@example.com
+              abrahamjesusmt@gmail.com
             </a>
           </div>
         </div>
@@ -212,11 +192,7 @@ const Home = () => {
         <main className="pt-16 md:pt-20">
           {" "}
           {/* Add padding to account for fixed header */}
-          <HeroSection
-            name="John Doe"
-            title="Full Stack Developer"
-            profileImageUrl="https://api.dicebear.com/7.x/avataaars/svg?seed=portfolio"
-          />
+          <HeroSection />
           <AboutSection />
           <ProjectsSection />
         </main>

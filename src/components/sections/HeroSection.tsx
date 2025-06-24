@@ -19,19 +19,18 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-  name = "John Doe",
+  name = "Jesús Medina",
   title = "Full Stack Developer",
-  profileImageUrl = "https://api.dicebear.com/7.x/avataaars/svg?seed=portfolio",
+  profileImageUrl = "/meimage.png",
   featuredProjects = [
     {
-      title: "E-Commerce Platform",
+      title: "atelonabierto.com",
       description:
-        "A modern e-commerce solution with cart functionality and payment integration.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80",
-      technologies: ["React", "Node.js", "Stripe"],
-      githubLink: "#",
-      liveLink: "#",
+        "A theater company's website showcasing their shows, events, and other activities.",
+      imageUrl: "/atelonabiertoimage.png",
+      technologies: ["HTML", "CSS", "JAVASCRIPT"],
+      githubLink: "https://github.com/AbrahamThomasJ/ataWeb1.3",
+      liveLink: "https://atelonabierto.com",
     },
     {
       title: "Task Management App",
@@ -72,7 +71,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           >
             <div className="relative mb-8 w-64 h-64 md:w-80 md:h-80">
               <motion.img
-                src={profileImageUrl}
+                src="/meimage.png"
                 alt={name}
                 className="w-full h-full object-contain"
                 initial={{ scale: 0.8, opacity: 0 }}

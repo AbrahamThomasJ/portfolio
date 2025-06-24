@@ -25,7 +25,7 @@ interface ProjectCardProps {
   technologies?: Technology[];
   liveUrl?: string;
   githubUrl?: string;
-  demoUrl?: string;
+
   className?: string;
 }
 
@@ -41,7 +41,7 @@ const ProjectCard = ({
   ],
   liveUrl = "#",
   githubUrl = "#",
-  demoUrl = "#",
+
   className = "",
 }: ProjectCardProps) => {
   return (
@@ -85,14 +85,21 @@ const ProjectCard = ({
 
         <CardFooter className="flex justify-between gap-2 pt-4">
           {liveUrl && (
-            <Button
-              variant="default"
-              size="sm"
-              className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1"
             >
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Live Site
-            </Button>
+              <Button
+                variant="default"
+                size="sm"
+                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Live Site
+              </Button>
+            </a>
           )}
           {githubUrl && (
             <Button variant="outline" size="sm" className="flex-1">
@@ -100,12 +107,7 @@ const ProjectCard = ({
               Code
             </Button>
           )}
-          {demoUrl && (
-            <Button variant="secondary" size="sm" className="flex-1">
-              <Code className="mr-2 h-4 w-4" />
-              Demo
-            </Button>
-          )}
+
         </CardFooter>
       </Card>
     </motion.div>

@@ -31,105 +31,18 @@ const ProjectsSection = ({
   projects = [
     {
       id: "1",
-      title: "E-Commerce Platform",
+      title: "atelonabierto.com",
       description:
-        "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+        "A theater company's website showcasing their shows, events, and other activities.",
+      image: "/atelonabiertoimage.png",
       technologies: [
-        { name: "React", color: "bg-blue-500" },
-        { name: "Node.js", color: "bg-green-600" },
-        { name: "MongoDB", color: "bg-green-500" },
-        { name: "Stripe", color: "bg-purple-500" },
+        { name: "HTML", color: "bg-orange-500" },
+        { name: "CSS", color: "bg-blue-500" },
+        { name: "JAVASCRIPT", color: "bg-yellow-400" },
       ],
-      liveUrl: "#",
-      githubUrl: "#",
-      demoUrl: "#",
+      liveUrl: "https://atelonabierto.com",
+      githubUrl: "https://github.com/AbrahamThomasJ/ataWeb1.3",
       category: "web",
-    },
-    {
-      id: "2",
-      title: "Task Management App",
-      description:
-        "A productivity application for managing tasks, projects, and team collaboration with real-time updates.",
-      image:
-        "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=800&q=80",
-      technologies: [
-        { name: "React", color: "bg-blue-500" },
-        { name: "TypeScript", color: "bg-blue-700" },
-        { name: "Firebase", color: "bg-yellow-500" },
-        { name: "Tailwind", color: "bg-cyan-500" },
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "web",
-    },
-    {
-      id: "3",
-      title: "Fitness Tracker",
-      description:
-        "A mobile application for tracking workouts, nutrition, and fitness progress with data visualization.",
-      image:
-        "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
-      technologies: [
-        { name: "React Native", color: "bg-blue-600" },
-        { name: "Redux", color: "bg-purple-600" },
-        { name: "GraphQL", color: "bg-pink-600" },
-        { name: "AWS", color: "bg-yellow-600" },
-      ],
-      githubUrl: "#",
-      demoUrl: "#",
-      category: "mobile",
-    },
-    {
-      id: "4",
-      title: "Weather Dashboard",
-      description:
-        "A weather application providing real-time forecasts, historical data, and interactive maps for locations worldwide.",
-      image:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
-      technologies: [
-        { name: "JavaScript", color: "bg-yellow-400" },
-        { name: "OpenWeather API", color: "bg-blue-400" },
-        { name: "Chart.js", color: "bg-pink-400" },
-        { name: "CSS3", color: "bg-blue-500" },
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "web",
-    },
-    {
-      id: "5",
-      title: "Portfolio Website",
-      description:
-        "A personal portfolio website showcasing projects, skills, and professional experience with modern design.",
-      image:
-        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&q=80",
-      technologies: [
-        { name: "React", color: "bg-blue-500" },
-        { name: "Tailwind CSS", color: "bg-cyan-500" },
-        { name: "Framer Motion", color: "bg-purple-500" },
-        { name: "Vite", color: "bg-yellow-500" },
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      category: "web",
-    },
-    {
-      id: "6",
-      title: "AI Image Generator",
-      description:
-        "An application that uses machine learning to generate unique images based on text prompts and style preferences.",
-      image:
-        "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
-      technologies: [
-        { name: "Python", color: "bg-blue-500" },
-        { name: "TensorFlow", color: "bg-orange-500" },
-        { name: "Flask", color: "bg-gray-500" },
-        { name: "React", color: "bg-blue-600" },
-      ],
-      demoUrl: "#",
-      category: "ai",
     },
   ],
 }: ProjectsSectionProps) => {
@@ -249,7 +162,7 @@ const ProjectsSection = ({
                 technologies={project.technologies}
                 liveUrl={project.liveUrl}
                 githubUrl={project.githubUrl}
-                demoUrl={project.demoUrl}
+
               />
             ))}
           </motion.div>
