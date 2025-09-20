@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ThemeProvider, useTheme } from "@/components/theme/ThemeProvider";
+import { useTheme } from "@/components/theme/ThemeProvider";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
@@ -93,7 +93,7 @@ const Header: React.FC<HeaderProps> = ({
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-gray-100 dark:bg-gray-800 py-12 px-4">
+    <footer id="contact" className="bg-secondary py-12 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -163,10 +163,10 @@ const Footer = () => {
               Feel free to reach out for collaborations or inquiries.
             </p>
             <a
-              href="mailto:abrahamjesusmt@gmail.com"
+              href="mailto:abrahamthomasdev@gmail.com"
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
-              abrahamjesusmt@gmail.com
+              abrahamthomasdev@gmail.com
             </a>
           </div>
         </div>
@@ -185,21 +185,19 @@ const Home = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <ThemeProvider defaultTheme={theme}>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-        <Header onThemeToggle={toggleTheme} isDarkMode={theme === "dark"} />
+    <div className="min-h-screen">
+      <Header onThemeToggle={toggleTheme} isDarkMode={theme === "dark"} />
 
-        <main className="pt-16 md:pt-20">
-          {" "}
-          {/* Add padding to account for fixed header */}
-          <HeroSection />
-          <AboutSection />
-          <ProjectsSection />
-        </main>
+      <main className="pt-16 md:pt-20">
+        {" "}
+        {/* Add padding to account for fixed header */}
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+      </main>
 
-        <Footer />
-      </div>
-    </ThemeProvider>
+      <Footer />
+    </div>
   );
 };
 

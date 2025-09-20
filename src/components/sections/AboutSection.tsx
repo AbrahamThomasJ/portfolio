@@ -17,22 +17,18 @@ interface AboutSectionProps {
 
 const AboutSection = ({
   title = "About Me",
-  description = "I'm a passionate full-stack developer with a focus on creating beautiful, responsive, and user-friendly web applications. With experience in web development, I specialize in React, TypeScript, and modern frontend frameworks while also having strong backend skills.",
+  description = "I am a frontend developer in search of creating creative and original websites. I also keep myself in constant learning as I believe there is no ceiling to what can be learned and applied in computer science.",
   skills = [
-    { name: "React", category: "frontend" },
-    { name: "TypeScript", category: "frontend" },
-    { name: "Next.js", category: "frontend" },
-    { name: "Tailwind CSS", category: "frontend" },
-    { name: "Node.js", category: "backend" },
-    { name: "Express", category: "backend" },
+    { name: "HTML", category: "frontend" },
+    { name: "CSS", category: "frontend" },
+    { name: "JavaScript", category: "frontend" },
     { name: "PostgreSQL", category: "backend" },
 
     { name: "UI/UX Design", category: "design" },
 
     { name: "Git", category: "tools" },
-    { name: "Docker", category: "tools" },
   ],
-  backgroundClass = "bg-white dark:bg-gray-900",
+  backgroundClass = "bg-background",
 }: AboutSectionProps) => {
   // Group skills by category
   const skillsByCategory = skills.reduce<Record<string, Skill[]>>(

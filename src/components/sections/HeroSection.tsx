@@ -32,6 +32,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       githubLink: "https://github.com/AbrahamThomasJ/ataWeb1.3",
       liveLink: "https://atelonabierto.com",
     },
+    {
+      title: "Mafer's Portfolio",
+      description: "Animated web portfolio created for Mafer, a passionate graphic designer.",
+      imageUrl: "/mafer-portfolio.png",
+      technologies: ["HTML", "CSS", "JAVASCRIPT"],
+      githubLink: "https://github.com/AbrahamThomasJ/mafer_portfolio",
+      liveLink: "https://abrahamthomasj.github.io/mafer_portfolio",
+    },
   ],
 }) => {
   return (

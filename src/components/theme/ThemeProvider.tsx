@@ -63,9 +63,7 @@ export const ThemeProvider = ({
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-        {children}
-      </div>
+      {children}
     </ThemeContext.Provider>
   );
 };

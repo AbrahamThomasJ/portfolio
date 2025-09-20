@@ -44,6 +44,21 @@ const ProjectsSection = ({
       githubUrl: "https://github.com/AbrahamThomasJ/ataWeb1.3",
       category: "web",
     },
+    {
+      id: "2",
+      title: "Mafer's Portfolio",
+      description:
+        "Animated web portfolio created for Mafer, a passionate graphic designer.",
+      image: "/mafer-portfolio.png",
+      technologies: [
+        { name: "HTML", color: "bg-orange-500" },
+        { name: "CSS", color: "bg-blue-500" },
+        { name: "JAVASCRIPT", color: "bg-yellow-400" },
+      ],
+      liveUrl: "https://abrahamthomasj.github.io/mafer_portfolio",
+      githubUrl: "https://github.com/AbrahamThomasJ/mafer_portfolio",
+      category: "web",
+    },
   ];
   const [searchTerm, setSearchTerm] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
@@ -82,7 +97,7 @@ const ProjectsSection = ({
   return (
     <section
       id="projects"
-      className="py-20 px-4 md:px-8 bg-gray-50 dark:bg-gray-900"
+      className="py-20 px-4 md:px-8 bg-secondary"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
